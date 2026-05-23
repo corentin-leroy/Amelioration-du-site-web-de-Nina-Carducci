@@ -106,8 +106,10 @@ body {
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer; /* Ajout du curseur cliquable au survole des filtres */
 }
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;

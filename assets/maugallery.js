@@ -154,8 +154,7 @@
         }
       });
       next =
-        imagesCollection[index] ||
-        imagesCollection[imagesCollection.length - 1];
+        imagesCollection[index - 1] || imagesCollection[imagesCollection.length - 1]; //ajout de "index - 1" plutôt que "index" pour que l'image précédente s'affiche bien
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage() {
@@ -192,7 +191,7 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      next = imagesCollection[index + 1] || imagesCollection[0]; //ajout de "index + 1" plutôt que "index" pour que l'image suivante s'affiche bien
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
@@ -240,7 +239,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active-tag active"); // correction permetant a active-tag d'être activé
 
       var tag = $(this).data("images-toggle");
 
