@@ -69,7 +69,7 @@ body {
 
 .picture img {
 	width: 100%;
-	height: auto; /*ajout pour que l'image de Nina garde des dimensions correct avec l'ajout de la heights en HTML*/
+	height: auto; /* Ajout pour que l'image de Nina garde des dimensions correct avec l'ajout de la heights en HTML */
 }
 #about-me {
 	flex: 2
@@ -84,8 +84,10 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 16px; /* Ajout pour compenser le changement du <h3> en <p> sur le text */
 }
-#about-me p {
+
+#about-me p:not(.about-me__introduction) { /* Ajout de not(.about-me__introduction) pour que cela ne prenne pas la priorité sur le font-size: 16px; sur .about-me__introduction */
 	width: 80%;
 	font-size: 14px;
 }
@@ -145,12 +147,14 @@ body {
 	margin: auto;
 	padding-block: 3em;
 }
+
 .quote__text {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 40px; /*Ajout de la font-size pour compenser le changement qui passe les quote de h1 a p> */
 }
+
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
