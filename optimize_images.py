@@ -23,7 +23,7 @@ EXTENSIONS = (".jpg", ".jpeg", ".png", ".webp")  # Extensions à traiter
 
 # Largeur max par dossier (hauteur calculée automatiquement pour garder les proportions)
 MAX_WIDTHS = {
-    "slider":     1600,
+    "slider":     2000,
     "gallery":     900,
     "portraits":   900,
     "concerts":    900,
@@ -34,8 +34,8 @@ MAX_WIDTHS = {
 
 # Largeur max pour les images à la racine (nina.png, camera.png, instagram.png)
 ROOT_IMAGES = {
-    "nina":       500,
-    "camera":     400,
+    "nina":       600,
+    "camera":     500,
     "instagram":   40,
 }
 # ───────────────────────────────────────────────────────────────────────────────

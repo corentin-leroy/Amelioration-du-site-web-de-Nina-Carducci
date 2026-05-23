@@ -69,7 +69,7 @@ body {
 
 .picture img {
 	width: 100%;
-
+	height: auto; /*ajout pour que l'image de Nina garde des dimensions correct avec l'ajout de la heights en HTML*/
 }
 #about-me {
 	flex: 2
@@ -244,6 +244,10 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+.carousel-item img {
+    height: auto; /*ajout pour que les sliders garde des dimensions correct avec l'ajout des heights en HTML*/
 }
 
 @media all and (max-width: 1180px) {
