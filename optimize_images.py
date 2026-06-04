@@ -77,10 +77,10 @@ def optimize_images():
     count = 0
     errors = []
 
+    print("-" * 60)
     print(f"📁 Dossier source  : {IMAGES_DIR}")
     print(f"📁 Dossier sortie  : {OUTPUT_DIR}")
     print(f"🎚  Qualité WebP    : {QUALITY}")
-    print("-" * 60)
 
     for root, dirs, files in os.walk(IMAGES_DIR):
         for filename in files:
